@@ -1,0 +1,56 @@
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+.modalContent {
+    background-color: #D9DFC6;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 350px;
+    width: 100%;
+    overflow-y: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.modalClose {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #000000;
+}
+
+.modalContent h2 {
+    color: #000000;
+    font-size: 1.7em;
+    word-wrap: break-word;
+    margin-right: 30px;
+}
+
+.modalSection {
+    padding: 15px;
+    background-color: #FFF2C2;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.modalSection h3 {
+    color: #000000;
+}

@@ -6,6 +6,7 @@ export default function MainPanel() {
     const [searchTerm, setSearchTerm] = useState('');
     const [users, setUsers] = useState([]);
     const [filteredUsers, setFilteredUsers] = useState([]);
+    const [darkMode, setDarkMode] = useState(false);
 
     useEffect(() => {
         async function fetchUsers() {
@@ -18,9 +19,13 @@ export default function MainPanel() {
                 console.error('Error fetching users:');
             }
         };
-    
         fetchUsers();
     }, []);
+
+    const toggleDarkMode = () => {
+        setDarkMode(!darkMode);
+        document.documentElement.setAttribute('theme', darkMode ? 'light' : 'dark');
+    };
 
     const handleSearchChange = (e) => {
         const value = e.target.value;
@@ -46,6 +51,12 @@ export default function MainPanel() {
                     className={styles.searchInput}
                     onChange={handleSearchChange}
                 />
+                <button 
+                    className={styles.themeToggle}
+                    onClick={toggleDarkMode}
+                >
+                    {darkMode ? '☀️' : '🌙'}
+                </button>
             </div>
             <div className={styles.userListSection}>
                 {filteredUsers.map(user => (

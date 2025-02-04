@@ -1,9 +1,10 @@
 .userCard {
-    background-color: #FFF2C2;
+    background-color: var(--card-color);
     padding: 20px;
     border-radius: 8px;
     min-width: 300px;
-    border: 1px solid #FFFDF0;
+    border: 1px solid var(--border-color);
+    transition: all 0.2s ease;
 }
 
 .userCard:hover {
@@ -18,7 +19,7 @@
 }
 
 .userName {
-    color: #000000;
+    color: var(--text-color);
 }
 
 .userEmail {
@@ -27,23 +28,23 @@
 
 .addressSection {
     padding-top: 10px;
-    border-top: 1px solid #D9DFC6;
+    border-top: 1px solid var(--border-color);
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
 .addressSection h4 {
-    color: #000000;
+    color: var(--text-color);
     font-size: 0.9em;
 }
 
 span {
     font-weight: 600;
-    color: #393939;
+    color: var(--text-color);
 }
 
 p {
     font-size: 0.85em;
-    color: #000000;
+    color: var(--text-color);
 }

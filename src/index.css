@@ -11,3 +11,28 @@
   margin: 0;
   padding: 0px;
 }
+
+:root {
+  --background-color: #D9DFC6;
+  --card-color: #FFF2C2;
+  --text-color: #2C3639;
+  --border-color: #FFFDF0;
+  --modal-bg: #D9DFC6;
+  --search-bg: #EFF3EA;
+}
+
+[theme='dark'] {
+  --background-color: #181C14;
+  --card-color: #3C3D37;
+  --text-color: #ECDFCC;
+  --border-color: #ECDFCC;
+  --modal-bg: #697565;
+  --search-bg: #697565;
+}
+
+:root {
+  background-color: var(--background-color);
+  font-family: 'Inter', sans-serif;
+  color: var(--text-color);
+  transition: all 0.2s ease;
+}

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import styles from './MainPanel.module.css';
+import UserCard from '../UserCard/UserCard';
 
 export default function MainPanel() {
     const [searchTerm, setSearchTerm] = useState('');
@@ -48,19 +49,7 @@ export default function MainPanel() {
             </div>
             <div className={styles.userListSection}>
                 {filteredUsers.map(user => (
-                    <div key={user.id} className={styles.userCard}>
-                        <div className={styles.personalInfoSection}>
-                            <h3 className={styles.userName}>{user.name}</h3>
-                            <p className={styles.userUsername}><span>Username:</span> {user.username}</p>
-                            <p className={styles.userEmail}><span>Email:</span> {user.email}</p>
-                        </div>
-                        <div className={styles.addressSection}>
-                            <h4>Address:</h4>
-                            <p><span>Street:</span> {user.address.street}</p>
-                            <p><span>Suite:</span> {user.address.suite}</p>
-                            <p><span>City:</span> {user.address.city}</p>
-                        </div>
-                    </div>
+                    <UserCard key={user.id} user={user} />
                 ))}
             </div>
         </>

@@ -1,0 +1,27 @@
+.searchBarSection {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.searchInput {
+    padding: 12px;
+    font-size: 1.2em;
+    width: 60vw;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #EFF3EA;
+    border: 1px solid #FFFDF0;
+}
+
+.searchInput:focus {
+    outline: none;
+}
+
+.userListSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}

@@ -1,38 +1,9 @@
-.searchBarSection {
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-}
-
-.searchInput {
-    padding: 12px;
-    font-size: 1.2em;
-    width: 60vw;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    background-color: #EFF3EA;
-    border: 1px solid #FFFDF0;
-}
-
-.searchInput:focus {
-    outline: none;
-}
-
-.userListSection {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-}
-
 .userCard {
     background-color: #FFF2C2;
     padding: 20px;
     border-radius: 8px;
     min-width: 300px;
     border: 1px solid #FFFDF0;
-    /* height: 250px; */
 }
 
 .userCard:hover {
@@ -54,11 +25,6 @@
     padding-bottom: 10px;
 }
 
-p {
-    font-size: 0.85em;
-    color: #000000;
-}
-
 .addressSection {
     padding-top: 10px;
     border-top: 1px solid #D9DFC6;
@@ -75,4 +41,9 @@ p {
 span {
     font-weight: 600;
     color: #393939;
+}
+
+p {
+    font-size: 0.85em;
+    color: #000000;
 }

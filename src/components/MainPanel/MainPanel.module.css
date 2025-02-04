@@ -41,3 +41,14 @@
     gap: 20px;
     padding: 20px;
 }
+
+.errorMessage {
+    color: var(--text-color);
+    background-color: var(--card-color);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid var(--border-color);
+}
